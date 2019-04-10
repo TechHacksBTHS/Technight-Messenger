@@ -1,0 +1,13 @@
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\bin\Release\TechHacksSoftware.exe.config
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\bin\Release\TechHacksSoftware.exe
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\bin\Release\TechHacksSoftware.pdb
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\obj\Release\TechHacksSoftware.csprojAssemblyReference.cache
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\obj\Release\TechHacksSoftware.TechHacksMainMenu.resources
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\obj\Release\TechHacksSoftware.Properties.Resources.resources
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\obj\Release\TechHacksSoftware.csproj.GenerateResource.cache
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\obj\Release\TechHacksSoftware.csproj.CoreCompileInputs.cache
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\obj\Release\TechHacksSoftware.exe
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\obj\Release\TechHacksSoftware.pdb
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\bin\Release\Networking.dll
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\bin\Release\Networking.pdb
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksSoftware\obj\Release\TechHacksSoftware.csproj.CopyComplete

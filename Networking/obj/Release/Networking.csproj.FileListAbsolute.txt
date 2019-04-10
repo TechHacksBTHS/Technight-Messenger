@@ -1,0 +1,6 @@
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\Networking\bin\Release\Networking.dll
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\Networking\bin\Release\Networking.pdb
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\Networking\obj\Release\Networking.csprojAssemblyReference.cache
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\Networking\obj\Release\Networking.csproj.CoreCompileInputs.cache
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\Networking\obj\Release\Networking.dll
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\Networking\obj\Release\Networking.pdb

@@ -1,0 +1,10 @@
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\bin\Release\TechHacksConnectServer.exe.config
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\bin\Release\TechHacksConnectServer.exe
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\bin\Release\TechHacksConnectServer.pdb
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\obj\Release\TechHacksConnectServer.csprojAssemblyReference.cache
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\obj\Release\TechHacksConnectServer.csproj.CoreCompileInputs.cache
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\obj\Release\TechHacksConnectServer.exe
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\obj\Release\TechHacksConnectServer.pdb
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\bin\Release\Networking.dll
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\bin\Release\Networking.pdb
+C:\Users\AlbertS\Desktop\Programming\C#\TechHacksSoftware\TechHacksConnectServer\obj\Release\TechHacksConnectServer.csproj.CopyComplete
