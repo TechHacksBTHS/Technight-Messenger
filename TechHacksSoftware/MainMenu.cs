@@ -111,7 +111,7 @@ namespace TechHacksSoftware
 
             Network.Disconnect();
 
-            ConnectedStatusLbl.ForeColor = Color.FromArgb(192, 0, 0); ;
+            ConnectedStatusLbl.ForeColor = Color.FromArgb(192, 0, 0);
             ConnectedStatusLbl.Text = "Disconnected";
 
             ConnectBtn.Enabled = true;

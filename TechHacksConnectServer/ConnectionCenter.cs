@@ -13,7 +13,7 @@ namespace TechHacksConnectServer
         private Networking.TH_TcpServer server = null;
         public List<Connection> connected_clients = new List<Connection>();
         private bool accepting_new_connections = false;
-        public static uint MAXIMUM_CONNECTIONS = 64;
+        public static uint MAXIMUM_CONNECTIONS = 250;
 
         public ConnectionCenter(string host_ip, int port)
         {
@@ -92,7 +92,9 @@ namespace TechHacksConnectServer
                 try
                 {
                     string received_data = server.Receive(connection.Value);
-                    SendToAllConnectedClients(connection.Key + ": " + received_data);
+                    int parsing_results = ParseReceivedMessageForCommands(connection, received_data);
+
+                    if (parsing_results == 0) SendToAllConnectedClients(connection.Key + ": " + received_data);
                 }
                 catch (System.IO.IOException)
                 {
@@ -102,6 +104,32 @@ namespace TechHacksConnectServer
                     break;
                 }
             }
+        }
+
+        private int ParseReceivedMessageForCommands(Connection conn, string msg)
+        {
+            if (msg.Contains("!room "))
+            {
+                string[] args = msg.Split();
+                string cmd = args[1];
+                int room_number;
+                int.TryParse(args[2], out room_number);
+
+                if (cmd.Equals("join"))
+                {
+                    // join an existing chat room
+                    
+                }
+                else if (cmd.Equals("create"))
+                {
+                    // create a new chat room
+
+                }
+
+                return 1;
+            }
+
+            return 0;
         }
     }
 }
