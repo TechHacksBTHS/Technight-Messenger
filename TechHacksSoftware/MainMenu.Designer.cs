@@ -51,20 +51,23 @@
             this.UserMessageBox.Size = new System.Drawing.Size(1259, 42);
             this.UserMessageBox.TabIndex = 0;
             this.UserMessageBox.Text = "Enter your message . . .";
+            this.UserMessageBox.Click += new System.EventHandler(this.UserMessageBox_Click);
             this.UserMessageBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.UserMessageBox_KeyDown);
             // 
             // MessageArea
             // 
             this.MessageArea.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.MessageArea.Font = new System.Drawing.Font("Constantia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MessageArea.Font = new System.Drawing.Font("Constantia", 11F);
             this.MessageArea.Location = new System.Drawing.Point(12, 86);
             this.MessageArea.MaximumSize = new System.Drawing.Size(10000, 10000);
             this.MessageArea.Multiline = true;
             this.MessageArea.Name = "MessageArea";
             this.MessageArea.ReadOnly = true;
+            this.MessageArea.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.MessageArea.Size = new System.Drawing.Size(1259, 738);
             this.MessageArea.TabIndex = 1;
             this.MessageArea.Text = "\r\n";
+            this.MessageArea.TextChanged += new System.EventHandler(this.MessageArea_TextChanged);
             // 
             // ConnectBtn
             // 
@@ -182,7 +185,8 @@
             this.Controls.Add(this.MessageArea);
             this.Controls.Add(this.UserMessageBox);
             this.Name = "TechHacksMainMenu";
-            this.Text = "TechHacks Software";
+            this.ShowIcon = false;
+            this.Text = "TechHacksConnect";
             this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

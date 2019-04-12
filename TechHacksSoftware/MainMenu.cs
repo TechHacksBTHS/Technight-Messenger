@@ -57,7 +57,11 @@ namespace TechHacksSoftware
         {
             if (e.KeyCode == Keys.Enter)
             {
-                Network.Send(UserMessageBox.Text);
+                if (UserMessageBox.Text.Equals("!clear"))
+                    MessageArea.Clear();
+                else
+                    Network.Send(UserMessageBox.Text);
+
                 UserMessageBox.Clear();
             }
         }
@@ -157,10 +161,24 @@ namespace TechHacksSoftware
             UsernameInputTextbox.Visible = true;
             UsernameLbl.Visible = true;
 
-            ConnectBtn.Enabled = true;
+            ConnectBtn.Enabled = false;
 
             LoginBtn.Text = "Login";
             LoggedIn = false;
+        }
+
+        private void UserMessageBox_Click(object sender, EventArgs e)
+        {
+            if (UserMessageBox.Text.Equals("Enter your message . . ."))
+            {
+                UserMessageBox.Clear();
+            }
+        }
+
+        private void MessageArea_TextChanged(object sender, EventArgs e)
+        {
+            MessageArea.SelectionStart = MessageArea.Text.Length;
+            MessageArea.ScrollToCaret();
         }
     }
 }
