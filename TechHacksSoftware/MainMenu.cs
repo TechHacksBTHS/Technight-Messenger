@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -179,6 +180,11 @@ namespace TechHacksSoftware
         {
             MessageArea.SelectionStart = MessageArea.Text.Length;
             MessageArea.ScrollToCaret();
+        }
+
+        private void WebsiteLinkLbl_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("https://" + WebsiteLinkLbl.Text);
         }
     }
 }

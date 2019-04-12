@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TechHacksMainMenu));
             this.UserMessageBox = new System.Windows.Forms.TextBox();
             this.MessageArea = new System.Windows.Forms.TextBox();
             this.ConnectBtn = new System.Windows.Forms.Button();
@@ -38,15 +39,17 @@
             this.UsernameInputTextbox = new System.Windows.Forms.TextBox();
             this.UsernameLbl = new System.Windows.Forms.Label();
             this.AccountLbl = new System.Windows.Forms.Label();
+            this.Logo = new System.Windows.Forms.Button();
+            this.WebsiteLinkLbl = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // UserMessageBox
             // 
             this.UserMessageBox.BackColor = System.Drawing.SystemColors.MenuBar;
             this.UserMessageBox.Font = new System.Drawing.Font("Constantia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UserMessageBox.Location = new System.Drawing.Point(12, 839);
+            this.UserMessageBox.Location = new System.Drawing.Point(12, 830);
             this.UserMessageBox.MaximumSize = new System.Drawing.Size(10000, 10000);
-            this.UserMessageBox.MinimumSize = new System.Drawing.Size(4, 60);
+            this.UserMessageBox.MinimumSize = new System.Drawing.Size(4, 64);
             this.UserMessageBox.Name = "UserMessageBox";
             this.UserMessageBox.Size = new System.Drawing.Size(1259, 42);
             this.UserMessageBox.TabIndex = 0;
@@ -56,8 +59,9 @@
             // 
             // MessageArea
             // 
-            this.MessageArea.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.MessageArea.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.MessageArea.Font = new System.Drawing.Font("Constantia", 11F);
+            this.MessageArea.ForeColor = System.Drawing.Color.White;
             this.MessageArea.Location = new System.Drawing.Point(12, 86);
             this.MessageArea.MaximumSize = new System.Drawing.Size(10000, 10000);
             this.MessageArea.Multiline = true;
@@ -73,7 +77,7 @@
             // 
             this.ConnectBtn.Enabled = false;
             this.ConnectBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ConnectBtn.Location = new System.Drawing.Point(1290, 86);
+            this.ConnectBtn.Location = new System.Drawing.Point(1330, 27);
             this.ConnectBtn.Name = "ConnectBtn";
             this.ConnectBtn.Size = new System.Drawing.Size(298, 64);
             this.ConnectBtn.TabIndex = 2;
@@ -97,7 +101,7 @@
             // 
             this.LoginBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.LoginBtn.ForeColor = System.Drawing.Color.Black;
-            this.LoginBtn.Location = new System.Drawing.Point(1290, 828);
+            this.LoginBtn.Location = new System.Drawing.Point(1330, 819);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(298, 64);
             this.LoginBtn.TabIndex = 4;
@@ -111,7 +115,7 @@
             this.ConnectedStatusLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.ConnectedStatusLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.ConnectedStatusLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ConnectedStatusLbl.Location = new System.Drawing.Point(1384, 166);
+            this.ConnectedStatusLbl.Location = new System.Drawing.Point(1424, 107);
             this.ConnectedStatusLbl.Name = "ConnectedStatusLbl";
             this.ConnectedStatusLbl.Size = new System.Drawing.Size(170, 29);
             this.ConnectedStatusLbl.TabIndex = 6;
@@ -123,8 +127,8 @@
             this.connected_status_lbl_ni.AutoSize = true;
             this.connected_status_lbl_ni.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.connected_status_lbl_ni.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.connected_status_lbl_ni.ForeColor = System.Drawing.Color.Black;
-            this.connected_status_lbl_ni.Location = new System.Drawing.Point(1285, 166);
+            this.connected_status_lbl_ni.ForeColor = System.Drawing.Color.White;
+            this.connected_status_lbl_ni.Location = new System.Drawing.Point(1325, 107);
             this.connected_status_lbl_ni.Name = "connected_status_lbl_ni";
             this.connected_status_lbl_ni.Size = new System.Drawing.Size(93, 29);
             this.connected_status_lbl_ni.TabIndex = 7;
@@ -135,7 +139,7 @@
             // 
             this.UsernameInputTextbox.BackColor = System.Drawing.SystemColors.MenuBar;
             this.UsernameInputTextbox.Font = new System.Drawing.Font("Constantia", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.UsernameInputTextbox.Location = new System.Drawing.Point(1303, 753);
+            this.UsernameInputTextbox.Location = new System.Drawing.Point(1343, 742);
             this.UsernameInputTextbox.MaximumSize = new System.Drawing.Size(10000, 10000);
             this.UsernameInputTextbox.MinimumSize = new System.Drawing.Size(4, 30);
             this.UsernameInputTextbox.Name = "UsernameInputTextbox";
@@ -147,8 +151,8 @@
             this.UsernameLbl.AutoSize = true;
             this.UsernameLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.UsernameLbl.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.UsernameLbl.ForeColor = System.Drawing.Color.Black;
-            this.UsernameLbl.Location = new System.Drawing.Point(1374, 721);
+            this.UsernameLbl.ForeColor = System.Drawing.Color.White;
+            this.UsernameLbl.Location = new System.Drawing.Point(1414, 710);
             this.UsernameLbl.Name = "UsernameLbl";
             this.UsernameLbl.Size = new System.Drawing.Size(127, 29);
             this.UsernameLbl.TabIndex = 9;
@@ -160,7 +164,7 @@
             this.AccountLbl.AutoSize = true;
             this.AccountLbl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.AccountLbl.Font = new System.Drawing.Font("Arial", 14F, System.Drawing.FontStyle.Bold);
-            this.AccountLbl.ForeColor = System.Drawing.Color.Black;
+            this.AccountLbl.ForeColor = System.Drawing.Color.White;
             this.AccountLbl.Location = new System.Drawing.Point(12, 27);
             this.AccountLbl.Name = "AccountLbl";
             this.AccountLbl.Size = new System.Drawing.Size(144, 33);
@@ -168,12 +172,41 @@
             this.AccountLbl.Text = "Account: ";
             this.AccountLbl.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // Logo
+            // 
+            this.Logo.BackColor = System.Drawing.Color.Transparent;
+            this.Logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Logo.BackgroundImage")));
+            this.Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Logo.FlatAppearance.BorderSize = 0;
+            this.Logo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Logo.Location = new System.Drawing.Point(1287, 323);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(399, 147);
+            this.Logo.TabIndex = 13;
+            this.Logo.UseVisualStyleBackColor = false;
+            // 
+            // WebsiteLinkLbl
+            // 
+            this.WebsiteLinkLbl.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.WebsiteLinkLbl.AutoSize = true;
+            this.WebsiteLinkLbl.Font = new System.Drawing.Font("Verdana", 13.5F);
+            this.WebsiteLinkLbl.LinkColor = System.Drawing.Color.Aqua;
+            this.WebsiteLinkLbl.Location = new System.Drawing.Point(1285, 486);
+            this.WebsiteLinkLbl.Name = "WebsiteLinkLbl";
+            this.WebsiteLinkLbl.Size = new System.Drawing.Size(412, 32);
+            this.WebsiteLinkLbl.TabIndex = 14;
+            this.WebsiteLinkLbl.TabStop = true;
+            this.WebsiteLinkLbl.Text = "technight2019.techhacks.nyc";
+            this.WebsiteLinkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.WebsiteLinkLbl_LinkClicked);
+            // 
             // TechHacksMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.ClientSize = new System.Drawing.Size(1627, 941);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.ClientSize = new System.Drawing.Size(1802, 901);
+            this.Controls.Add(this.WebsiteLinkLbl);
+            this.Controls.Add(this.Logo);
             this.Controls.Add(this.AccountLbl);
             this.Controls.Add(this.UsernameLbl);
             this.Controls.Add(this.UsernameInputTextbox);
@@ -205,6 +238,8 @@
         private System.Windows.Forms.TextBox UsernameInputTextbox;
         private System.Windows.Forms.Label UsernameLbl;
         private System.Windows.Forms.Label AccountLbl;
+        private System.Windows.Forms.Button Logo;
+        private System.Windows.Forms.LinkLabel WebsiteLinkLbl;
     }
 }
 

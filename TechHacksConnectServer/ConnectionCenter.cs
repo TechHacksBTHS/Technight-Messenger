@@ -255,7 +255,7 @@ namespace TechHacksConnectServer
                        "2) !room join [room number]      Joins a separate private chat room or creates one if it doesn't exist already\r\n" +
                        "3) !room list                                 Lists existing rooms and number of active users in them\r\n" +
                        "4) !room leave                              Exits current chat room and returns to the global room (Room 1)\r\n" +
-                       "5) !clear                                        Erases all current messages\r\n";
+                       "5) !clear                                        Erases all current messages\r\n\r\n";
         }
     }
 }
